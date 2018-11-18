@@ -1,41 +1,25 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { HashRouter, Link, Route } from 'react-router-dom';
 
-class App extends Component {
-  constructor() {
-    this.state = {
-      step: 1, 
-      fontChoice:"",
-      height:0,
-      color:"",
-      backingStyle:"",
-      installment:"",
-      totalPrice: 1,
-    }
-  }
-  
-  
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+import StepOne from './StepOne';
+import StepTwo from './StepTwo';
+import StepThree from './StepThree';
+import MainPage from './MainPage';
+
+const App = ({ children }) => {
+  const baseCls = 'app';
+
+  return (
+    <HashRouter>
+      <div className={baseCls}>
+        <Route path='/' component={MainPage} />
+        <Route path="1" component={StepOne}/>
+        <Route path="2" component={StepTwo}/>
+        <Route path="3" component={StepThree}/>
       </div>
-    );
-  }
-}
+    </HashRouter>
+  );
+};
+
 
 export default App;

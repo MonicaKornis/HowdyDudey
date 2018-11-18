@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Aladin|Berkshire+Swash|Cedarville+Cursive|Coming+Soon|Dancing+Script|Delius+Unicase|Fondamento|Herr+Von+Muellerhoff|Meddon|Merienda+One|Quintessential|Rancho|Sriracha|Yellowtail');
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +13,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.selected {
+  background-color: grey;
 }
