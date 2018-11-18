@@ -28,7 +28,7 @@ class MainPage extends Component {
 
   }
 
-  goBackStep() {
+  goBackStep(e) {
     debugger
     let step = this.state.step;
     step = this.state.step - 1;
@@ -38,8 +38,9 @@ class MainPage extends Component {
     }
   }
 
-  goForwardStep(selection) {
+  goForwardStep(e,selection) {
     // event.stopPropragration();
+    debugger
     let newStepNum = this.state.step;
     this.props.history.push(`${this.state.step+1}`)
     this.setState( prevState => {

@@ -26,7 +26,7 @@ class StepTwo extends React.Component {
       <Sign font={this.props.font} color={this.state.color} changeText={this.props.changeText} signText={this.props.signText}/>
       <div> Step One </div>
       <Arrow goForwardStep={() => {}} goBackStep={this.props.goBackStep} type={'back'}/>
-      <Arrow goForwardStep={this.props.goForwardStep} goBackStep={this.props.goBackStep} type={'forward'}/>
+      <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.color)} goBackStep={this.props.goBackStep} type={'forward'}/>
 
       <section>
         <div id='Cool-White' onClick={this.selectColor}>Cool White</div>
@@ -46,7 +46,7 @@ class StepTwo extends React.Component {
         <div id='Purple' onClick={this.selectColor}>Purple</div>
         <div id='Custom' onClick={this.selectColor}>Custom</div>
       </section>
-      <ContinueButton goForwardStep={(e) => this.props.goForwardStep(this.state.color)}/>
+      <ContinueButton goForwardStep={(e) => this.props.goForwardStep(e,this.state.color)}/>
     </div>
     )
   }

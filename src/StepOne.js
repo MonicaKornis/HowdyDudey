@@ -25,7 +25,7 @@ import ContinueButton from './sub-components/ContinueButton';
       <div>
         <Sign font={this.state.font} color={this.props.color} changeText={this.props.changeText} signText={this.props.signText}/>
         <div> Step One </div>
-        <Arrow goForwardStep={this.props.goForwardStep} goBackStep={this.props.goBackStep} type={'forward'}/>
+        <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.font)} goBackStep={(e) => this.props.goBackStep(e)} type={'forward'}/>
 
         <section>
           <div id='Miami' onClick={this.selectFont}>Miami</div>
@@ -42,7 +42,7 @@ import ContinueButton from './sub-components/ContinueButton';
           <div id='Hank' onClick={this.selectFont}>Hank</div>
           <div id='Bowie' onClick={this.selectFont}>Bowie</div>
         </section>
-        <ContinueButton goForwardStep={this.props.goForwardStep(this.state.font)}/>
+        <ContinueButton goForwardStep={(e) => this.props.goForwardStep(e,this.state.font)} />
       </div>
       )
     }

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ContinueButton = ({ goForwardStep}) => {
+const ContinueButton = ({ goForwardStep, selection}) => {
   debugger
   return (
-      <div onClick={goForwardStep}>
+      <div onClick={(e) => goForwardStep(e,selection)}>
         CONTINUE
       </div>
   )
