@@ -15,12 +15,11 @@ class MainPage extends Component {
       step: 1,
       signText: "Howdy Dudey",
       1 :"Miami",
-      2: "Neon",
-      3: "Cool-White",
+      2: "Cool-White",
+      3: 'Outlined',
       4: 'Medium',
-      5: 'Outlined',
-      6: "Hanging",
-      totalPrice: 1,
+      5: 'Hanging',
+      totalPrice: 0,
     }
     this.goForwardStep = this.goForwardStep.bind(this);
     this.changeText = this.changeText.bind(this);
@@ -28,7 +27,7 @@ class MainPage extends Component {
 
   }
 
-  goBackStep(e) {
+  goBackStep(e,stepPrice) {
     debugger
     let step = this.state.step;
     step = this.state.step - 1;
@@ -38,16 +37,18 @@ class MainPage extends Component {
     }
   }
 
-  goForwardStep(e,selection) {
-    // event.stopPropragration();
+  goForwardStep(e,selection,cost) {
+    // event.stopPropagation();
     debugger
     let newStepNum = this.state.step;
     this.props.history.push(`${this.state.step+1}`)
     this.setState( prevState => {
       let number = prevState.step;
+      cost = cost === undefined ? 0 : cost;
+      let newPrice = prevState.totalPrice + cost;
       debugger
       return (
-        {step: number+1, [number]: selection}
+        {step: number+1, [number]: selection, totalPrice: newPrice}
       )
     })
   }
@@ -73,7 +74,7 @@ class MainPage extends Component {
       <div className="App">
         <header className="App-header">
             <Component text={this.state.text} step={this.state.step} changeText={this.changeText}
-              goForwardStep={this.goForwardStep} color={this.state[3]} font={this.state[1]} goBackStep={this.goBackStep} signText={this.state.signText}/>
+              goForwardStep={this.goForwardStep} color={this.state[2]} font={this.state[1]} goBackStep={this.goBackStep} signText={this.state.signText}/>
         </header>
       </div>
 

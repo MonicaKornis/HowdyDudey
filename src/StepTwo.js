@@ -7,15 +7,17 @@ class StepTwo extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      color: this.props.color
+      color: this.props.color,
+      price: 0
     }
     this.selectColor = this.selectColor.bind(this);
   }
 
-  selectColor(event) {
+  selectColor(event,price) {
     //find DOM node of previously selected element and set it equal to default
     document.getElementById(this.state.color).className = '';
-    this.setState({color: event.target.id});
+    let cost = price === undefined ? 0 : price;
+    this.setState({color: event.target.id, price: cost});
     event.target.className = `selected`;
   }
 
@@ -26,7 +28,7 @@ class StepTwo extends React.Component {
       <Sign font={this.props.font} color={this.state.color} changeText={this.props.changeText} signText={this.props.signText}/>
       <div> Step One </div>
       <Arrow goForwardStep={() => {}} goBackStep={this.props.goBackStep} type={'back'}/>
-      <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.color)} goBackStep={this.props.goBackStep} type={'forward'}/>
+      <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.color,this.state.price)} goBackStep={() => {}} type={'forward'}/>
 
       <section>
         <div id='Cool-White' onClick={this.selectColor}>Cool White</div>
@@ -44,9 +46,9 @@ class StepTwo extends React.Component {
         <div id='Red' onClick={this.selectColor}>Red</div>
         <div id='Lilac' onClick={this.selectColor}>Lilac</div>
         <div id='Purple' onClick={this.selectColor}>Purple</div>
-        <div id='Custom' onClick={this.selectColor}>Custom</div>
+        <div id='Custom' onClick={(e) => this.selectColor(e,20)}>Custom</div>
       </section>
-      <ContinueButton goForwardStep={(e) => this.props.goForwardStep(e,this.state.color)}/>
+      <ContinueButton goForwardStep={(e) => this.props.goForwardStep(e,this.state.color, this.state.price)}/>
     </div>
     )
   }

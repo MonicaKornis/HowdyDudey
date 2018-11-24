@@ -7,15 +7,15 @@ class StepThree extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      size: "Medium"
+      backing: 'Outlined',
     }
-    this.selectSize = this.selectSize.bind(this);
+    this.selectBacking = this.selectBacking.bind(this);
   }
 
-  selectSize(event) {
+  selectBacking(event) {
     //find DOM node of previously selected element and set it equal to default
-    document.getElementById(this.state.size).className = '';
-    this.setState({size: event.target.id});
+    document.getElementById(this.state.backing).className = '';
+    this.setState({backing: event.target.id});
     event.target.className = `selected`;
   }
 
@@ -24,16 +24,16 @@ class StepThree extends React.Component {
     return(
     <div>
       <Sign font={this.props.font} color={this.state.color} changeText={this.props.changeText} signText={this.props.signText}/>
-      <div> Step One </div>
+      <div> Step Three </div>
       <Arrow goForwardStep={() => {}} goBackStep={this.props.goBackStep} type={'back'}/>
-      <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.size)} goBackStep={this.props.goBackStep} type={'forward'}/>
+      <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.backing)} goBackStep={() => {}} type={'forward'}/>
 
       <section>
-        <div id='Medium' onClick={this.selectColor}>Medium</div>
-        <div id='Large' onClick={this.selectColor}>Large</div>
+        <div id='Outlined' onClick={this.selectBacking}>Outlined</div>
+        <div id='Square' onClick={this.selectBacking}>Square</div>
 
       </section>
-      <ContinueButton goForwardStep={(e) => this.props.goForwardStep(e,this.state.color)}/>
+      <ContinueButton goForwardStep={(e) => this.props.goForwardStep(e,this.state.backing)}/>
     </div>
     )
   }

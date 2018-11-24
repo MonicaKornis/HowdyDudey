@@ -4,6 +4,7 @@ import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Routes from './routes';
+require('dotenv').config()
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
