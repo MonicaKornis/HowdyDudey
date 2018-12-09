@@ -1,17 +1,76 @@
 import React from 'react';
 import PaypalExpressBtn from 'react-paypal-express-checkout';
+import $ from 'jquery';
 
 class PayPalButton extends React.Component {
     constructor(props){
       super(props);
+      this.sendInvoice = this.sendInvoice.bind(this);
+    }
+
+    sendInvoice() {
+      let data = {
+                  "merchant_info": {
+                    "email": "merchant@example.com",
+                    "first_name": "David",
+                    "last_name": "Larusso",
+                    "business_name": "Mitchell & Murray",
+                    "phone": {
+                      "country_code": "001",
+                      "national_number": "4085551234"
+                    }
+                  },
+                  "billing_info": [{
+                    "email": "bill-me@example.com",
+                    "first_name": "Stephanie",
+                    "last_name": "Meyers"
+                  }],
+                  "items": [{
+                    "name": "Zoom System wireless headphones",
+                    "quantity": 2,
+                    "unit_price": {
+                      "currency": "USD",
+                      "value": "120"
+                    },
+                    "tax": {
+                      "name": "Tax",
+                      "percent": 8
+                    }
+                  }],
+                  "discount": {
+                    "percent": 1
+                  },
+                  "shipping_cost": {
+                    "amount": {
+                      "currency": "USD",
+                      "value": "10"
+                    }
+                  },
+                  "note": "Thank you for your business.",
+                  "terms": "No refunds after 30 days."
+                }
+    
+      $.ajax({
+       method: 'POST',
+       beforeSend: function (xhr) {
+        xhr.setRequestHeader('Authorization', 'Bearer EMTDxdflj6jk0RKeAe1OwO-w0fOs9x7ypkq0_xQ4mz-AftysysohlpQncN9Kf-CioiSqHS7AqachPSFY');
+      },
+       url: `https://api.sandbox.paypal.com/v1/invoicing/invoices/`,
+       headers: '',
+       data: data,
+       success: () => {console.log('it worked')},
+       error: () => {console.log('it failed')},
+     })
     }
 
     render() {
 		const onSuccess = (payment) => {
 			// 1, 2, and ... Poof! You made it, everything's fine and dandy!
+                this.sendInvoice();
             		console.log("Payment successful!", payment);
             		// You can bind the "payment" object's value to your state or props or whatever here, please see below for sample returned data
 		}
+    let message = console.log('it worked!');
 
 		const onCancel = (data) => {
 			// The user pressed "cancel" or closed the PayPal popup
@@ -29,7 +88,7 @@ class PayPalButton extends React.Component {
 
 		let env = 'sandbox'; // you can set this string to 'production'
 		let currency = 'USD'; // you can set this string from your props or state
-		let total = this.props.totalPrice === undefined ? 1 : this.props.totalPrice;  // this is the total amount (based on currency) to charge
+		let total = (this.props.totalPrice === undefined) ||  (this.props.totalPrice === 0)? 1 : this.props.totalPrice;  // this is the total amount (based on currency) to charge
 		// Document on Paypal's currency code: https://developer.paypal.com/docs/classic/api/currency_codes/
 
 		const client = {

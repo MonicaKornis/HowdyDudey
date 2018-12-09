@@ -7,6 +7,7 @@ import StepThree from './StepThree';
 import StepFour from './StepFour';
 import StepFive  from './StepFive';
 import StepSix from './StepSix';
+import StepSeven from './StepSeven';
 
 class MainPage extends Component {
   constructor(props) {
@@ -19,7 +20,8 @@ class MainPage extends Component {
       3: 'Outlined',
       4: 'Medium',
       5: 'Hanging',
-      totalPrice: 0,
+      6: 'test@test.com',
+      totalPrice: 10,
     }
     this.goForwardStep = this.goForwardStep.bind(this);
     this.changeText = this.changeText.bind(this);
@@ -29,11 +31,21 @@ class MainPage extends Component {
 
   goBackStep(e,stepPrice) {
 
-    let step = this.state.step;
-    step = this.state.step - 1;
+
     if(this.state.step > 1){
-      this.setState({step: step});
+      let step = this.state.step;
+      step = this.state.step - 1;
       this.props.history.push(`${step}`);
+
+      this.setState(prevState => {
+        debugger
+        stepPrice = stepPrice === undefined ? 0 : stepPrice;
+        let totalPrice = prevState.totalPrice - stepPrice;
+
+        return (
+          { totalPrice: totalPrice, step: step}
+        )
+      });
     }
   }
 
@@ -65,7 +77,8 @@ class MainPage extends Component {
       3: StepThree,
       4: StepFour,
       5: StepFive,
-      6: StepSix
+      6: StepSix,
+      7: StepSeven,
     }
 
     const Component = steps[this.state.step];

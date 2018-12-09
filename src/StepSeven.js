@@ -1,20 +1,21 @@
 import React from 'react';
 import Sign from './sub-components/Sign';
 import Arrow from './sub-components/Arrow';
-import ContinueButton from './sub-components/ContinueButton';
+import PayPalButton from './sub-components/PayPalButton';
 
-class StepSix extends React.Component {
+class StepSeven extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      email: ""
+      style: "Hanging"
     }
-    this.handleChange = this.handleChange.bind(this);
+    this.selectStyle = this.selectStyle.bind(this);
   }
 
-  handleChange(event,price) {
+  selectStyle(event,price) {
     //find DOM node of previously selected element and set it equal to default
-    this.setState({email: event.target.value});
+    this.setState({style: event.target.id});
+    event.target.className = `selected`;
   }
 
   render() {
@@ -22,18 +23,16 @@ class StepSix extends React.Component {
     return(
     <div>
       <Sign font={this.props.font} color={this.props.color} changeText={this.props.changeText} signText={this.props.signText}/>
-      <div> Step Six </div>
+      <div> CHECKOUT </div>
       <Arrow goForwardStep={() => {}} goBackStep={this.props.goBackStep} type={'back'}/>
       <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.style)} goBackStep={() => {}} type={'forward'}/>
 
       <section>
-        <h1>EMAIL</h1>
-        <input onChange={this.handleChange}></input>
+      <PayPalButton totalPrice={this.props.totalPrice}/>
       </section>
-      <ContinueButton goForwardStep={(e) => this.props.goForwardStep(e,this.state.email)}/>
     </div>
     )
   }
 }
 
- export default StepSix;
+ export default StepSeven;

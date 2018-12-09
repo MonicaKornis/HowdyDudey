@@ -23,7 +23,7 @@ class StepThree extends React.Component {
     console.log(this.state);
     return(
     <div>
-      <Sign font={this.props.font} color={this.state.color} changeText={this.props.changeText} signText={this.props.signText}/>
+      <Sign font={this.props.font} color={this.props.color} changeText={this.props.changeText} signText={this.props.signText}/>
       <div> Step Three </div>
       <Arrow goForwardStep={() => {}} goBackStep={this.props.goBackStep} type={'back'}/>
       <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.backing)} goBackStep={() => {}} type={'forward'}/>

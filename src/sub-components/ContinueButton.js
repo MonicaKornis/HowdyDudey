@@ -3,7 +3,7 @@ import React from 'react';
 const ContinueButton = ({ goForwardStep, selection}) => {
 
   return (
-      <div onClick={(e) => goForwardStep(e)}>
+      <div id='continueButton' onClick={(e) => goForwardStep(e)}>
         CONTINUE
       </div>
   )
