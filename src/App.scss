@@ -1,6 +1,7 @@
 @import './scss/fonts.scss';
 @import './scss/sign.scss';
 @import './scss/font-bar-step1.scss';
+@import './scss/color-bar-step.scss';
 
 .App {
   text-align: center;
@@ -36,13 +37,14 @@
   flex-direction: row;
   justify-content: space-between;
   width: 96vw;
-  top: -4vh;
+  top: -2vh;
+  left: 2%;
   position: absolute;
 }
 
 svg#bolt {
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
-   filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
+   filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
   text-shadow: 1.5px 4px 10px rgba(1, 72, 4, 0.3), 0 0 4px #E7048B, 0 0 45px #E7048B, 0 0 45px #E7048B, 0 0 1px #E7048B;
   margin-bottom: 2vh;
 }
@@ -58,7 +60,7 @@ svg#bolt {
 }
 
 
-#selector-container {
+.selector-container {
   position: absolute;
   bottom: 1px;
 }

@@ -24,7 +24,7 @@ import LighteningBolt from './svgs/lightening-bolt';
     render() {
       console.log(this.state);
       return(
-      <div id='selector-container'>
+      <div className='selector-container'>
         <div className='arrowBar'>
           <div></div>
           <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.font,this.state.price)} goBackStep={() => {}} type={'forward'}/>

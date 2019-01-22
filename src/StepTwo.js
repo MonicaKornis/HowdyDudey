@@ -25,34 +25,39 @@ class StepTwo extends React.Component {
   render() {
     console.log(this.state);
     return(
-    <div>
+    <div className='selector-container'>
+
+    <div className='arrowBar'>
+      <Arrow goForwardStep={() => {}} goBackStep={(e) => this.props.goBackStep(e,this.state.price)} type='back'/>
+      <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.color,this.state.price)} goBackStep={() => {}} type='forward'/>
+    </div>
+
       <Sign font={this.props.font} color={this.state.color} changeText={this.props.changeText} signText={this.props.signText}/>
 
-      <div className='arrowBar'>
-        <Arrow goForwardStep={() => {}} goBackStep={(e) => this.props.goBackStep(e,this.state.price)} type='back'/>
-        <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.color,this.state.price)} goBackStep={() => {}} type='forward'/>
-      </div>
-
       <LighteningBolt className='selector-caption'/>
-      <div className='selector-caption'> Pick A Font </div>
+      <div className='selector-caption'> Pick A Color </div>
 
       <section className='colorBar'>
-        <div id='Cool-White' onClick={this.selectColor}>Cool White</div>
-        <div id='Peach' onClick={this.selectColor}>Peach</div>
-        <div id='Baby-Blue' onClick={this.selectColor}>Baby Blue</div>
-        <div id='Mint-Green' onClick={this.selectColor}>Mint Green</div>
-        <div id='Warm-White' onClick={this.selectColor}>Warm White</div>
-        <div id='Pink' onClick={this.selectColor}>Pink</div>
-        <div id='Sky-Blue' onClick={this.selectColor}>Sky Blue</div>
-        <div id='Yellow' onClick={this.selectColor}>Yellow</div>
-        <div id='Hot-Pink' onClick={this.selectColor}>Hot Pink</div>
-        <div id='Electric-Blue' onClick={this.selectColor}>Electric Blue</div>
-        <div id='Forest-Green' onClick={this.selectColor}>Forest Green</div>
-        <div id='Orange' onClick={this.selectColor}>Orange</div>
-        <div id='Red' onClick={this.selectColor}>Red</div>
-        <div id='Lilac' onClick={this.selectColor}>Lilac</div>
-        <div id='Purple' onClick={this.selectColor}>Purple</div>
-        <div id='Custom' onClick={(e) => this.selectColor(e,20)}>Custom</div>
+        <div className='colorIconWrapper'>
+          <div className='colorBox'>
+            <div id='Cool-White' className='colorCircle' onClick={this.selectColor}>Cool White</div>
+            <div id='Peach' className='colorCircle' onClick={this.selectColor}>Peach</div>
+            <div id='Baby-Blue' className='colorCircle' onClick={this.selectColor}>Baby Blue</div>
+            <div id='Mint-Green' className='colorCircle' onClick={this.selectColor}>Mint Green</div>
+            <div id='Warm-White' className='colorCircle' onClick={this.selectColor}>Warm White</div>
+            <div id='Pink' className='colorCircle' onClick={this.selectColor}>Pink</div>
+            <div id='Sky-Blue' className='colorCircle' onClick={this.selectColor}>Sky Blue</div>
+            <div id='Yellow' className='colorCircle' onClick={this.selectColor}>Yellow</div>
+            <div id='Hot-Pink' className='colorCircle' onClick={this.selectColor}>Hot Pink</div>
+            <div id='Electric-Blue' className='colorCircle' onClick={this.selectColor}>Electric Blue</div>
+            <div id='Forest-Green' className='colorCircle' onClick={this.selectColor}>Forest Green</div>
+            <div id='Orange' className='colorCircle' onClick={this.selectColor}>Orange</div>
+            <div id='Red' className='colorCircle' onClick={this.selectColor}>Red</div>
+            <div id='Lilac' className='colorCircle' onClick={this.selectColor}>Lilac</div>
+            <div id='Purple' className='colorCircle' onClick={this.selectColor}>Purple</div>
+            <div id='Custom' className='colorCircle' onClick={(e) => this.selectColor(e,20)}>Custom</div>
+          </div>
+        </div>
       </section>
       <ContinueButton goForwardStep={(e) => this.props.goForwardStep(e,this.state.color, this.state.price)}/>
     </div>
