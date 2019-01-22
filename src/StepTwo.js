@@ -2,6 +2,7 @@ import React from 'react';
 import Sign from './sub-components/Sign';
 import Arrow from './sub-components/Arrow';
 import ContinueButton from './sub-components/ContinueButton';
+import LighteningBolt from './svgs/lightening-bolt';
 
 class StepTwo extends React.Component {
   constructor(props){
@@ -26,11 +27,16 @@ class StepTwo extends React.Component {
     return(
     <div>
       <Sign font={this.props.font} color={this.state.color} changeText={this.props.changeText} signText={this.props.signText}/>
-      <div> Step One </div>
-      <Arrow goForwardStep={() => {}} goBackStep={(e) => this.props.goBackStep(e,this.state.price)} type={'back'}/>
-      <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.color,this.state.price)} goBackStep={() => {}} type={'forward'}/>
 
-      <section>
+      <div className='arrowBar'>
+        <Arrow goForwardStep={() => {}} goBackStep={(e) => this.props.goBackStep(e,this.state.price)} type='back'/>
+        <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.color,this.state.price)} goBackStep={() => {}} type='forward'/>
+      </div>
+
+      <LighteningBolt className='selector-caption'/>
+      <div className='selector-caption'> Pick A Font </div>
+
+      <section className='colorBar'>
         <div id='Cool-White' onClick={this.selectColor}>Cool White</div>
         <div id='Peach' onClick={this.selectColor}>Peach</div>
         <div id='Baby-Blue' onClick={this.selectColor}>Baby Blue</div>

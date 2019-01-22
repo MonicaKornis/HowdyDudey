@@ -1,0 +1,510 @@
+.fontBar {
+  overflow-y: scroll;
+  color: black;
+  width: 100vw;
+  height: 40vh;
+  vertical-align: baseline;
+  position: relative;
+  min-height: 200px;
+  bottom: 0;
+}
+
+.fontBar * {
+  padding: 1vh;
+  padding-left: 10px;
+}
+
+.option {
+    height: 22%;
+    max-height: 80px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s ease-in-out;
+
+
+  &--Miami {
+    font-family: 'Miami';
+    height: 22%;
+    max-height: 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s ease-in-out;
+    color: #ccc;
+    letter-spacing: 0.64px;
+    font-size: 149%;
+    justify-content: center;
+    border-top: 1px solid rgba(151,151,151,.5);
+  }
+
+  &--Dolly {
+    font-family: 'Dolly';
+    height: 22%;
+    max-height: 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s ease-in-out;
+    border-top: 1px solid rgba(151,151,151,.5);
+    color: #ccc;
+    letter-spacing: 0.64px;
+    font-size: 149%;
+    justify-content: center;
+  }
+
+  &--Presley {
+    font-family: 'Presley';
+    height: 22%;
+    max-height: 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s ease-in-out;
+    border-top: 1px solid rgba(151,151,151,.5);
+    color: #ccc;
+    letter-spacing: 0.64px;
+    font-size: 149%;
+    justify-content: center;
+  }
+
+  &--Jane {
+    font-family: 'Jane';
+    height: 22%;
+    max-height: 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s ease-in-out;
+    border-top: 1px solid rgba(151,151,151,.5);
+    color: #ccc;
+    letter-spacing: 0.64px;
+    font-size: 149%;
+    justify-content: center;
+  }
+
+  &--Stevie {
+    font-family: 'Stevie';
+    height: 22%;
+    max-height: 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s ease-in-out;
+    border-top: 1px solid rgba(151,151,151,.5);
+    color: #ccc;
+    letter-spacing: 0.64px;
+    font-size: 149%;
+    justify-content: center;
+  }
+
+  &--Willie {
+    font-family: 'Willie';
+    height: 22%;
+    max-height: 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s ease-in-out;
+    border-top: 1px solid rgba(151,151,151,.5);
+    color: #ccc;
+    letter-spacing: 0.64px;
+    font-size: 149%;
+    justify-content: center;
+  }
+
+
+  &--Palm-Springs {
+    font-family: 'Palm Springs';
+    height: 22%;
+    max-height: 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s ease-in-out;
+    border-top: 1px solid rgba(151,151,151,.5);
+    color: #ccc;
+    letter-spacing: 0.64px;
+    font-size: 149%;
+    justify-content: center;
+  }
+
+  &--Beverly-Hills{
+    font-family: 'Beverly Hills';
+    height: 22%;
+    max-height: 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s ease-in-out;
+    border-top: 1px solid rgba(151,151,151,.5);
+    color: #ccc;
+    letter-spacing: 0.64px;
+    font-size: 149%;
+    justify-content: center;
+  }
+
+  &--San-Francisco {
+    font-family: 'San Francisco';
+    height: 22%;
+    max-height: 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s ease-in-out;
+    border-top: 1px solid rgba(151,151,151,.5);
+    color: #ccc;
+    letter-spacing: 0.64px;
+    font-size: 149%;
+    justify-content: center;
+  }
+
+  &--Long-Beach{
+    font-family: 'Long Beach';
+    height: 22%;
+    max-height: 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s ease-in-out;
+    border-top: 1px solid rgba(151,151,151,.5);
+
+    color: #ccc;
+    letter-spacing: 0.64px;
+    font-size: 149%;
+    justify-content: center;
+  }
+
+  &--Hank {
+    font-family: 'Hank';
+    height: 22%;
+    max-height: 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s ease-in-out;
+    border-top: 1px solid rgba(151,151,151,.5);
+    color: #ccc;
+    letter-spacing: 0.64px;
+    font-size: 149%;
+    justify-content: center;
+  }
+
+  &--Bowie {
+    font-family: 'Bowie';
+    height: 22%;
+    max-height: 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s ease-in-out;
+    border-top: 1px solid rgba(151,151,151,.5);
+    color: #ccc;
+    letter-spacing: 0.64px;
+    font-size: 149%;
+    justify-content: center;
+  }
+
+  &--Jackson {
+    font-family: 'Jackson';
+    height: 22%;
+    max-height: 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s ease-in-out;
+    border-top: 1px solid rgba(151,151,151,.5);
+    color: #ccc;
+    letter-spacing: 0.64px;
+    font-size: 149%;
+    justify-content: center;
+  }
+}
+
+.selected {
+    height: 22%;
+    max-height: 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: black;
+    transition: background 0.2s ease-in-out;
+
+    &--Miami {
+      font-family: 'Miami';
+      height: 22%;
+      max-height: 50px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s ease-in-out;
+      border-top: 1px solid rgba(151,151,151,.5);
+
+      letter-spacing: 0.64px;
+      font-size: 149%;
+      justify-content: center;
+      color: white;
+      text-shadow: 1.5px 4px 10px rgba(1, 72, 4, 0.3), 0 0 4px #E7048B, 0 0 45px #E7048B, 0 0 45px #E7048B, 0 0 1px #E7048B;
+
+
+    }
+
+    &--Dolly {
+      font-family: 'Dolly';
+      height: 22%;
+      max-height: 50px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s ease-in-out;
+      border-top: 1px solid rgba(151,151,151,.5);
+
+      color: #ccc;
+      letter-spacing: 0.64px;
+      font-size: 149%;
+      justify-content: center;
+      color: white;
+      text-shadow: 1.5px 4px 10px rgba(1, 72, 4, 0.3), 0 0 4px #E7048B, 0 0 45px #E7048B, 0 0 45px #E7048B, 0 0 1px #E7048B;
+    }
+
+    &--Presley {
+      font-family: 'Presley';
+      height: 22%;
+      max-height: 50px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s ease-in-out;
+      border-top: 1px solid rgba(151,151,151,.5);
+
+      color: #ccc;
+      letter-spacing: 0.64px;
+      font-size: 149%;
+      justify-content: center;
+      color: white;
+      text-shadow: 1.5px 4px 10px rgba(1, 72, 4, 0.3), 0 0 4px #E7048B, 0 0 45px #E7048B, 0 0 45px #E7048B, 0 0 1px #E7048B;
+    }
+
+    &--Jane {
+      font-family: 'Jane';
+      height: 22%;
+      max-height: 50px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s ease-in-out;
+      border-top: 1px solid rgba(151,151,151,.5);
+
+      color: #ccc;
+      letter-spacing: 0.64px;
+      font-size: 149%;
+      justify-content: center;
+      color: white;
+      text-shadow: 1.5px 4px 10px rgba(1, 72, 4, 0.3), 0 0 4px #E7048B, 0 0 45px #E7048B, 0 0 45px #E7048B, 0 0 1px #E7048B;
+    }
+
+    &--Stevie {
+      font-family: 'Stevie';
+      height: 22%;
+      max-height: 50px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s ease-in-out;
+      border-top: 1px solid rgba(151,151,151,.5);
+
+      color: #ccc;
+      letter-spacing: 0.64px;
+      font-size: 149%;
+      justify-content: center;
+      color: white;
+      text-shadow: 1.5px 4px 10px rgba(1, 72, 4, 0.3), 0 0 4px #E7048B, 0 0 45px #E7048B, 0 0 45px #E7048B, 0 0 1px #E7048B;
+
+    }
+
+    &--Willie {
+      font-family: 'Willie';
+      height: 22%;
+      max-height: 50px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s ease-in-out;
+      border-top: 1px solid rgba(151,151,151,.5);
+
+      color: #ccc;
+      letter-spacing: 0.64px;
+      font-size: 149%;
+      justify-content: center;
+      color: white;
+      text-shadow: 1.5px 4px 10px rgba(1, 72, 4, 0.3), 0 0 4px #E7048B, 0 0 45px #E7048B, 0 0 45px #E7048B, 0 0 1px #E7048B;
+    }
+
+    &--Jackson {
+      font-family: 'Jackson';
+      height: 22%;
+      max-height: 50px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s ease-in-out;
+      border-top: 1px solid rgba(151,151,151,.5);
+      color: #ccc;
+      letter-spacing: 0.64px;
+      font-size: 149%;
+      justify-content: center;
+      color: white;
+      text-shadow: 1.5px 4px 10px rgba(1, 72, 4, 0.3), 0 0 4px #E7048B, 0 0 45px #E7048B, 0 0 45px #E7048B, 0 0 1px #E7048B;
+    }
+
+    &--Palm-Springs {
+      font-family: 'Palm Springs';
+      height: 22%;
+      max-height: 50px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s ease-in-out;
+      border-top: 1px solid rgba(151,151,151,.5);
+      color: #ccc;
+      letter-spacing: 0.64px;
+      font-size: 149%;
+      justify-content: center;
+      color: white;
+      text-shadow: 1.5px 4px 10px rgba(1, 72, 4, 0.3), 0 0 4px #E7048B, 0 0 45px #E7048B, 0 0 45px #E7048B, 0 0 1px #E7048B;
+    }
+
+    &--Beverly-Hills{
+      font-family: 'Beverly Hills';
+      height: 22%;
+      max-height: 50px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s ease-in-out;
+      border-top: 1px solid rgba(151,151,151,.5);
+      color: #ccc;
+      letter-spacing: 0.64px;
+      font-size: 149%;
+      justify-content: center;
+      color: white;
+      text-shadow: 1.5px 4px 10px rgba(1, 72, 4, 0.3), 0 0 4px #E7048B, 0 0 45px #E7048B, 0 0 45px #E7048B, 0 0 1px #E7048B;
+
+    }
+
+    &--San-Francisco {
+      font-family: 'San Francisco';
+      height: 22%;
+      max-height: 50px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s ease-in-out;
+      border-top: 1px solid rgba(151,151,151,.5);
+      color: #ccc;
+      letter-spacing: 0.64px;
+      font-size: 149%;
+      justify-content: center;
+      color: white;
+      text-shadow: 1.5px 4px 10px rgba(1, 72, 4, 0.3), 0 0 4px #E7048B, 0 0 45px #E7048B, 0 0 45px #E7048B, 0 0 1px #E7048B;
+    }
+
+    &--Long-Beach{
+      font-family: 'Long Beach';
+      height: 22%;
+      max-height: 50px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s ease-in-out;
+      border-top: 1px solid rgba(151,151,151,.5);
+      color: #ccc;
+      letter-spacing: 0.64px;
+      font-size: 149%;
+      justify-content: center;
+      color: white;
+      text-shadow: 1.5px 4px 10px rgba(1, 72, 4, 0.3), 0 0 4px #E7048B, 0 0 45px #E7048B, 0 0 45px #E7048B, 0 0 1px #E7048B;
+
+    }
+
+    &--Hank {
+      font-family: 'Hank';
+      height: 22%;
+      max-height: 50px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s ease-in-out;
+      border-top: 1px solid rgba(151,151,151,.5);
+      color: #ccc;
+      letter-spacing: 0.64px;
+      font-size: 149%;
+      justify-content: center;
+      color: white;
+      text-shadow: 1.5px 4px 10px rgba(1, 72, 4, 0.3), 0 0 4px #E7048B, 0 0 45px #E7048B, 0 0 45px #E7048B, 0 0 1px #E7048B;
+
+    }
+
+    &--Jackson {
+      font-family: 'Jackson';
+      height: 22%;
+      max-height: 50px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s ease-in-out;
+      border-top: 1px solid rgba(151,151,151,.5);
+      color: #ccc;
+      letter-spacing: 0.64px;
+      font-size: 149%;
+      justify-content: center;
+      color: white;
+      text-shadow: 1.5px 4px 10px rgba(1, 72, 4, 0.3), 0 0 4px #E7048B, 0 0 45px #E7048B, 0 0 45px #E7048B, 0 0 1px #E7048B;
+    }
+
+    &--Bowie {
+      font-family: 'Bowie';
+      height: 22%;
+      max-height: 50px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s ease-in-out;
+      border-top: 1px solid rgba(151,151,151,.5);
+      color: #ccc;
+      letter-spacing: 0.64px;
+      font-size: 149%;
+      justify-content: center;
+      color: white;
+      text-shadow: 1.5px 4px 10px rgba(1, 72, 4, 0.3), 0 0 4px #E7048B, 0 0 45px #E7048B, 0 0 45px #E7048B, 0 0 1px #E7048B;
+    }
+}

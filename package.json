@@ -19,7 +19,8 @@
     "react-paypal-express-checkout": "^1.0.5",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "shopify-buy": "^1.11.0"
   },
   "scripts": {
     "start": "react-scripts start",

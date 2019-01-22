@@ -1,0 +1,481 @@
+$break-small-width: 520px;
+$break-medium-width: 660px;
+$break-large-width: 1150px;
+
+.neon.white {
+    color: #fff;
+    text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff;
+  }
+
+.neon.Peach {
+  color: #ffb0b3;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 10px #ffb0b3, 0 0 10px #ffb0b3, 0 0 10px #ffb0b3, 0 0 10px #ffb0b3;
+}
+
+.neon.Baby-Blue {
+  color: #a3dbff;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 10px #a3dbff, 0 0 10px #a3dbff, 0 0 10px #a3dbff, 0 0 10px #a3dbff;
+}
+
+.neon.Mint-Green {
+  color: #99ffcc;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 10px #99ffcc, 0 0 10px #99ffcc, 0 0 10px #99ffcc, 0 0 10px #99ffcc;
+}
+
+.neon.Warm-White {
+  color: #fffff5;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 10px #fffff5, 0 0 10px #fffff5, 0 0 10px #fffff5, 0 0 10px #fffff5;
+}
+
+.neon.Pink {
+  color: #ff8fff;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 10px #ff8fff, 0 0 10px #ff8fff, 0 0 10px #ff8fff, 0 0 10px #ff8fff;
+}
+
+.neon.Sky-Blue {
+  color: #00ffff;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 10px #00ffff, 0 0 10px #00ffff, 0 0 10px #00ffff, 0 0 10px #00ffff;
+}
+
+.neon.Green {
+  color: #00c700;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 10px #00c700, 0 0 10px #00c700, 0 0 10px #00c700, 0 0 10px #00c700;
+}
+
+.neon.Yellow {
+  color: #ffff00;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 10px #ffff00, 0 0 10px #ffff00, 0 0 10px #ffff00, 0 0 10px #ffff00;
+}
+
+.neon.Hot-Pink {
+  color: #ff00ff;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 10px #ff00ff, 0 0 10px #ff00ff, 0 0 10px #ff00ff, 0 0 10px #ff00ff;
+}
+
+.neon.Electric-Blue {
+  color: #0080ff;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 10px #0080ff, 0 0 10px #0080ff, 0 0 10px #0080ff, 0 0 10px #0080ff;
+}
+
+.neon.Forest-Green {
+  color: #007500;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 10px #007500, 0 0 10px #007500, 0 0 10px #007500, 0 0 10px #007500;
+}
+
+.neon.Orange {
+  color: #ffb300;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 10px #ffb300, 0 0 10px #ffb300, 0 0 10px #ffb300, 0 0 10px #ffb300;
+}
+
+.neon.Red {
+  color: #ff0000;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 10px #ff0000, 0 0 10px #ff0000, 0 0 10px #ff0000, 0 0 10px #ff0000;
+}
+
+.neon.Lilac {
+  color: #b3b3ff;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 10px #b3b3ff, 0 0 10px #b3b3ff, 0 0 10px #b3b3ff, 0 0 10px #b3b3ff;
+}
+
+.neon.Purple {
+  color: #7a2aa9;
+  text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 10px #7a2aa9, 0 0 10px #7a2aa9, 0 0 10px #7a2aa9, 0 0 10px #7a2aa9;
+}
+
+
+.led.peach {
+
+}
+
+.led.baby-blue {
+
+}
+
+.led.mint-green {
+
+}
+
+.led.warm-white {
+
+}
+
+.led.pink {
+
+}
+
+.led.sky-blue {
+
+}
+
+.led.green {
+
+}
+
+.led.yellow {
+
+}
+
+.led.hot-pink {
+
+}
+
+.led.electric-blue {
+
+}
+
+.led.forest-green {
+
+}
+
+.led.orange {
+
+}
+
+.led.red {
+
+}
+
+.led.lilac {
+
+}
+
+.led.purple {
+
+}
+
+.signBox {
+  height: 34vh;
+  height: 34vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editor .display-wrap {
+    display: inline-block;
+    position: relative;
+}
+
+.sign {
+  text-shadow: 1px 2px 10px rgba(1, 72, 4, 0.3), 0 0 45px #76f199, 0 0 45px #76f199, 0 0 45px #76f199, 0 0 45px #76f199;
+  font-size: 50px;
+  color: yellow;
+  font-size: 13vh;
+  display: flex;
+  justify-content: center;
+  height: 36vh;
+
+  &--Miami {
+    font-family: 'Miami';
+    font-size: 14vw;
+    padding-top: 9vh;
+  }
+  &--Dolly {
+    font-family: 'Dolly';
+    font-size: 14vw;
+    padding-top: 9vh;
+  }
+
+  &--Presley {
+    font-family: 'Presley';
+    font-size: 16vw;
+    padding-top: 9vh;
+  }
+
+  &--Jane {
+    font-family: 'Jane';
+    font-size: 14vw;
+    padding-top: 9vh;
+  }
+
+  &--Stevie {
+    font-family: 'Stevie';
+    font-size: 14vw;
+    padding-top: 9vh;
+  }
+
+  &--Willie {
+    font-family: 'Willie';
+    font-size: 14vw;
+    padding-top: 9vh;
+  }
+
+  &--Jackson {
+    font-family: 'Jackson';
+    font-size: 14vw;
+    padding-top: 9vh;
+  }
+
+  &--Palm-Springs {
+    font-family: 'Palm Springs';
+    font-size: 14vw;
+    padding-top: 9vh;
+  }
+
+  &--Beverly-Hills{
+    font-family: 'Beverly Hills';
+    font-size: 14vw;
+    padding-top: 9vh;
+  }
+
+  &--San-Francisco {
+    font-family: 'San Francisco';
+    font-size: 14vw;
+    padding-top: 9vh;
+  }
+
+  &--Long-Beach{
+    font-family: 'Long Beach';
+    font-size: 14vw;
+    padding-top: 9vh;
+  }
+
+  &--Hank {
+    font-family: 'Hank';
+    font-size: 14vw;
+    padding-top: 9vh;
+  }
+
+  &--Bowie {
+    font-family: 'Bowie';
+    font-size: 12vw;
+    padding-top: 9vh;
+  }
+
+  @media screen and (min-width: $break-small-width) and (max-width: $break-medium-width) {
+    &--Miami {
+      font-family: 'Miami';
+      font-size: 12vw;
+      padding-top: 9vh;
+    }
+    &--Dolly {
+      font-family: 'Dolly';
+      font-size: 12vw;
+      padding-top: 9vh;
+    }
+
+    &--Presley {
+      font-family: 'Presley';
+      font-size: 14vw;
+      padding-top: 9vh;
+    }
+
+    &--Jane {
+      font-family: 'Jane';
+      font-size: 12vw;
+      padding-top: 9vh;
+    }
+
+    &--Stevie {
+      font-family: 'Stevie';
+      font-size: 12vw;
+      padding-top: 9vh;
+    }
+
+    &--Willie {
+      font-family: 'Willie';
+      font-size: 12vw;
+      padding-top: 9vh;
+    }
+
+    &--Jackson {
+      font-family: 'Jackson';
+      font-size: 12vw;
+      padding-top: 9vh;
+    }
+
+    &--Palm-Springs {
+      font-family: 'Palm Springs';
+      font-size: 12vw;
+      padding-top: 9vh;
+    }
+
+    &--Beverly-Hills{
+      font-family: 'Beverly Hills';
+      font-size: 12vw;
+      padding-top: 9vh;
+    }
+
+    &--San-Francisco {
+      font-family: 'San Francisco';
+      font-size: 12vw;
+      padding-top: 9vh;
+    }
+
+    &--Long-Beach{
+      font-family: 'Long Beach';
+      font-size: 12vw;
+      padding-top: 9vh;
+    }
+
+    &--Hank {
+      font-family: 'Hank';
+      font-size: 12vw;
+      padding-top: 9vh;
+    }
+
+    &--Bowie {
+      font-family: 'Bowie';
+      font-size: 10vw;
+      padding-top: 9vh;
+    }
+  }
+
+  @media screen and (min-width: $break-medium-width) {
+    &--Miami {
+      font-family: 'Miami';
+      font-size: 9vw;
+      padding-top: 7vh;
+    }
+    &--Dolly {
+      font-family: 'Dolly';
+      font-size: 9vw;
+      padding-top: 7vh;
+    }
+
+    &--Presley {
+      font-family: 'Presley';
+      font-size: 11vw;
+      padding-top: 7vh;
+    }
+
+    &--Jane {
+      font-family: 'Jane';
+      font-size: 9vw;
+      padding-top: 7vh;
+    }
+
+    &--Stevie {
+      font-family: 'Stevie';
+      font-size: 9vw;
+      padding-top: 7vh;
+    }
+
+    &--Willie {
+      font-family: 'Willie';
+      font-size: 9vw;
+      padding-top: 7vh;
+    }
+
+    &--Jackson {
+      font-family: 'Jackson';
+      font-size: 9vw;
+      padding-top: 7vh;
+    }
+
+    &--Palm-Springs {
+      font-family: 'Palm Springs';
+      font-size: 9vw;
+      padding-top: 7vh;
+    }
+
+    &--Beverly-Hills{
+      font-family: 'Beverly Hills';
+      font-size: 9vw;
+      padding-top: 7vh;
+    }
+
+    &--San-Francisco {
+      font-family: 'San Francisco';
+      font-size: 9vw;
+      padding-top: 7vh;
+    }
+
+    &--Long-Beach{
+      font-family: 'Long Beach';
+      font-size: 9vw;
+      padding-top: 7vh;
+    }
+
+    &--Hank {
+      font-family: 'Hank';
+      font-size: 9vw;
+      padding-top: 7vh;
+    }
+
+    &--Bowie {
+      font-family: 'Bowie';
+      font-size: 7vw;
+      padding-top: 7vh;
+    }
+  }
+
+  @media screen and (min-width: $break-large-width) {
+    &--Miami {
+      font-family: 'Miami';
+      font-size: 8vw;
+      padding-top: 5vh;
+    }
+    &--Dolly {
+      font-family: 'Dolly';
+      font-size: 8vw;
+      padding-top: 5vh;
+    }
+
+    &--Presley {
+      font-family: 'Presley';
+      font-size: 11vw;
+      padding-top: 5vh;
+    }
+
+    &--Jane {
+      font-family: 'Jane';
+      font-size: 8vw;
+      padding-top: 5vh;
+    }
+
+    &--Stevie {
+      font-family: 'Stevie';
+      font-size: 8vw;
+      padding-top: 5vh;
+    }
+
+    &--Willie {
+      font-family: 'Willie';
+      font-size: 8vw;
+      padding-top: 5vh;
+    }
+
+    &--Jackson {
+      font-family: 'Jackson';
+      font-size: 8vw;
+      padding-top: 6vh;
+    }
+
+    &--Palm-Springs {
+      font-family: 'Palm Springs';
+      font-size: 9vw;
+      padding-top: 5vh;
+    }
+
+    &--Beverly-Hills{
+      font-family: 'Beverly Hills';
+      font-size: 8vw;
+      padding-top: 5vh;
+    }
+
+    &--San-Francisco {
+      font-family: 'San Francisco';
+      font-size: 8vw;
+      padding-top: 6vh;
+    }
+
+    &--Long-Beach{
+      font-family: 'Long Beach';
+      font-size: 9vw;
+      padding-top: 5vh;
+    }
+
+    &--Hank {
+      font-family: 'Hank';
+      font-size: 8vw;
+      padding-top: 5vh;
+    }
+
+    &--Bowie {
+      font-family: 'Bowie';
+      font-size: 6vw;
+      padding-top: 5vh;
+    }
+  }
+}

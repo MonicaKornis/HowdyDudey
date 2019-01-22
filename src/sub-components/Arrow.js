@@ -1,13 +1,18 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import ArrowLeft from '../svgs/arrow-left';
+import ArrowRight from '../svgs/arrow-right';
 
 const Arrow = ({ type, goBackStep, goForwardStep}) => {
   const action = type === 'forward' ? goForwardStep : goBackStep;
-  const icon = type === 'forward' ? faArrowRight : faArrowLeft;
-  return (
-      <FontAwesomeIcon icon={icon} onClick={action}/>
-  )
+  debugger
+  if(type === 'forward') {
+    return (
+        <ArrowRight action={goForwardStep}/>
+    )
+  } else {
+    return (
+        <ArrowLeft action={goBackStep}/>
+    )
+  }
 }
-
 export default Arrow;

@@ -2,6 +2,7 @@ import React from 'react';
 import Sign from './sub-components/Sign';
 import Arrow from './sub-components/Arrow';
 import ContinueButton from './sub-components/ContinueButton';
+import LighteningBolt from './svgs/lightening-bolt';
 
   class StepOne extends React.Component {
     constructor(props){
@@ -23,11 +24,16 @@ import ContinueButton from './sub-components/ContinueButton';
     render() {
       console.log(this.state);
       return(
-      <div>
-        <Sign font={this.state.font} color={this.props.color} changeText={this.props.changeText} signText={this.props.signText}/>
-        <div> Step One </div>
-        <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.font,this.state.price)} goBackStep={() => {}} type={'forward'}/>
+      <div id='selector-container'>
+        <div className='arrowBar'>
+          <div></div>
+          <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.font,this.state.price)} goBackStep={() => {}} type={'forward'}/>
+        </div>
 
+        <Sign font={this.state.font} color={this.props.color} changeText={this.props.changeText} signText={this.props.signText}/>
+
+        <LighteningBolt className='selector-caption'/>
+        <div className='selector-caption'> Pick A Font </div>
         <section className='fontBar'>
           <div id='Miami' className='option--Miami' onClick={this.selectFont}>Miami</div>
           <div id='Dolly' className='option--Dolly' onClick={this.selectFont}>Dolly</div>

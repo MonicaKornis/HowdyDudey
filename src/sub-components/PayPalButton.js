@@ -51,13 +51,19 @@ class PayPalButton extends React.Component {
                 }
     
       $.ajax({
+        headers: {
+           "Accept": "application/json",
+           "Accept-Language": "en_US",
+           "Authorization": "Basic A21AAHP2h1guke9MookjsHPT_-LywqaWaFdTukRDo6wgy2QdhdoTU515iklscA9leCHrvrb9bTigR3CCjunFP8oB2aUiDVdeg"
+         },
        method: 'POST',
        beforeSend: function (xhr) {
-        xhr.setRequestHeader('Authorization', 'Bearer EMTDxdflj6jk0RKeAe1OwO-w0fOs9x7ypkq0_xQ4mz-AftysysohlpQncN9Kf-CioiSqHS7AqachPSFY');
+        xhr.setRequestHeader('Authorization', 'Bearer A21AAFGUNmUg2l9rWablcdlLDzH7OrWfPMlAHFGj5jDlaLe_wx8oSTBkKqntTB_1ZdoNUXvk9s_NdPegU9_0CkioinrTxIfbw');
       },
        url: `https://api.sandbox.paypal.com/v1/invoicing/invoices/`,
        headers: '',
-       data: data,
+       data: JSON.stringify(data),
+       contentType: "application/x-www-form-urlencode",
        success: () => {console.log('it worked')},
        error: () => {console.log('it failed')},
      })
