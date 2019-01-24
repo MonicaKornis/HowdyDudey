@@ -40,22 +40,22 @@ class StepTwo extends React.Component {
       <section className='colorBar'>
         <div className='colorIconWrapper'>
           <div className='colorBox'>
-            <div id='Cool-White' className='colorCircle' onClick={this.selectColor}>Cool White</div>
-            <div id='Peach' className='colorCircle' onClick={this.selectColor}>Peach</div>
-            <div id='Baby-Blue' className='colorCircle' onClick={this.selectColor}>Baby Blue</div>
-            <div id='Mint-Green' className='colorCircle' onClick={this.selectColor}>Mint Green</div>
-            <div id='Warm-White' className='colorCircle' onClick={this.selectColor}>Warm White</div>
-            <div id='Pink' className='colorCircle' onClick={this.selectColor}>Pink</div>
-            <div id='Sky-Blue' className='colorCircle' onClick={this.selectColor}>Sky Blue</div>
-            <div id='Yellow' className='colorCircle' onClick={this.selectColor}>Yellow</div>
-            <div id='Hot-Pink' className='colorCircle' onClick={this.selectColor}>Hot Pink</div>
-            <div id='Electric-Blue' className='colorCircle' onClick={this.selectColor}>Electric Blue</div>
-            <div id='Forest-Green' className='colorCircle' onClick={this.selectColor}>Forest Green</div>
-            <div id='Orange' className='colorCircle' onClick={this.selectColor}>Orange</div>
-            <div id='Red' className='colorCircle' onClick={this.selectColor}>Red</div>
-            <div id='Lilac' className='colorCircle' onClick={this.selectColor}>Lilac</div>
-            <div id='Purple' className='colorCircle' onClick={this.selectColor}>Purple</div>
-            <div id='Custom' className='colorCircle' onClick={(e) => this.selectColor(e,20)}>Custom</div>
+            <div className='colorCircle-wrapper'><div id='Cool-White' className='colorCircle' onClick={this.selectColor}></div></div>
+            <div className='colorCircle-wrapper'><div id='Peach' className='colorCircle' onClick={this.selectColor}></div></div>
+            <div className='colorCircle-wrapper'><div id='Baby-Blue' className='colorCircle' onClick={this.selectColor}></div></div>
+            <div className='colorCircle-wrapper'><div id='Mint-Green' className='colorCircle' onClick={this.selectColor}></div></div>
+            <div className='colorCircle-wrapper'><div id='Warm-White' className='colorCircle' onClick={this.selectColor}></div></div>
+            <div className='colorCircle-wrapper'><div id='Pink' className='colorCircle' onClick={this.selectColor}></div></div>
+            <div className='colorCircle-wrapper'><div id='Sky-Blue' className='colorCircle' onClick={this.selectColor}></div></div>
+            <div className='colorCircle-wrapper'><div id='Yellow' className='colorCircle' onClick={this.selectColor}></div></div>
+            <div className='colorCircle-wrapper'><div id='Hot-Pink' className='colorCircle' onClick={this.selectColor}></div></div>
+            <div className='colorCircle-wrapper'><div id='Electric-Blue' className='colorCircle' onClick={this.selectColor}></div></div>
+            <div className='colorCircle-wrapper'><div id='Forest-Green' className='colorCircle' onClick={this.selectColor}></div></div>
+            <div className='colorCircle-wrapper'><div id='Orange' className='colorCircle' onClick={this.selectColor}></div></div>
+            <div className='colorCircle-wrapper'><div id='Red' className='colorCircle' onClick={this.selectColor}></div></div>
+            <div className='colorCircle-wrapper'><div id='Lilac' className='colorCircle' onClick={this.selectColor}></div></div>
+            <div className='colorCircle-wrapper'><div id='Purple' className='colorCircle' onClick={this.selectColor}></div></div>
+            <div className='colorCircle-wrapper'><div id='Custom' className='colorCircle' onClick={(e) => this.selectColor(e,20)}></div></div>
           </div>
         </div>
       </section>
