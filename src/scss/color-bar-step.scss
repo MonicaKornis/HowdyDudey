@@ -43,6 +43,19 @@
   border-radius: 50%;
 }
 
+div.colorCircle::before {
+  color: black;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  content: '';
+  border: 3px solid rgba(151,151,151,.5);
+  position: absolute;
+  display: block;
+  transition: border 0.35s ease-in-out, transform 0.35s ease-in-out;
+  transform: scale(0.9);
+}
+
 #Peach.colorCircle {
   width: 45px;
   height: 45px;
