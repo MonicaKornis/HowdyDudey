@@ -1,17 +1,24 @@
 import React from 'react';
 import ContentEditable from 'react-contenteditable'
 
-const Sign = ({signText, changeText, font, color}) => {
+const Sign = ({signText, changeText, font, color, backing}) => {
   let baseCls = 'sign'
-  if(font !== null) {
+  let backingStyle = ''; 
+  
+  if(font !== undefined) {
     baseCls += `--${font}`
   }
   
-  if(color !== null) {
+  if(color !== undefined) {
     baseCls += ` neon ${color}`
   }
   
+  if(backing !== undefined) {
+    baseCls += ` ${backing}`
+  }
+   debugger
   return (
+  <div className={backingStyle}>
     <div className='display-wrap display-color-mirrored neon white'>
       <div className='editor-text'>
         <div className='signBox'>
@@ -27,7 +34,9 @@ const Sign = ({signText, changeText, font, color}) => {
         </div>
       </div>
     </div>
+  </div>
   )
 }
 
 export default Sign;
+

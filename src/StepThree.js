@@ -1,38 +1,47 @@
+
 import React from 'react';
 import Sign from './sub-components/Sign';
 import Arrow from './sub-components/Arrow';
 import ContinueButton from './sub-components/ContinueButton';
+import LighteningBolt from './svgs/lightening-bolt';
 
 class StepThree extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      backing: 'Outlined',
+      backing: 'NoDisplay',
     }
     this.selectBacking = this.selectBacking.bind(this);
   }
 
   selectBacking(event) {
     //find DOM node of previously selected element and set it equal to default
-    document.getElementById(this.state.backing).className = '';
+    document.getElementById(this.state.backing).className = 'backingStyle';
     this.setState({backing: event.target.id});
-    event.target.className = `selected`;
+    event.target.className = `backingStyle selected`;
   }
 
   render() {
     console.log(this.state);
     return(
-    <div>
-      <Sign font={this.props.font} color={this.props.color} changeText={this.props.changeText} signText={this.props.signText}/>
-      <div> Step Three </div>
-      <Arrow goForwardStep={() => {}} goBackStep={this.props.goBackStep} type={'back'}/>
-      <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.backing)} goBackStep={() => {}} type={'forward'}/>
+    <div className='selector-container'>
+      <div className='arrowBar'>
+        <Arrow goForwardStep={() => {}} goBackStep={(e) => this.props.goBackStep(e,this.state.price)} type='back'/>
+        <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.color,this.state.price)} goBackStep={() => {}} type='forward'/>
+      </div>
+    
+        <Sign backing={this.state.backing} font={this.props.font} color={this.props.color} changeText={this.props.changeText} signText={this.props.signText}/>
+        
+        <LighteningBolt className='selector-caption'/>
+        <div className='selector-caption'> Pick A Font </div>
+        
+        <section className='colorBar'>
+        
+          <div id='NoDisplay' className='backingStyle' onClick={this.selectBacking}>No Display</div>
+          <div id='Outlined' className='backingStyle' onClick={this.selectBacking}>Outlined</div>
+          <div id='Square' className='backingStyle' onClick={this.selectBacking}>Square</div>
 
-      <section>
-        <div id='Outlined' onClick={this.selectBacking}>Outlined</div>
-        <div id='Square' onClick={this.selectBacking}>Square</div>
-
-      </section>
+        </section>
       <ContinueButton goForwardStep={(e) => this.props.goForwardStep(e,this.state.backing)}/>
     </div>
     )

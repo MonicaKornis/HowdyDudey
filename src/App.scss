@@ -2,6 +2,12 @@
 @import './scss/sign.scss';
 @import './scss/font-bar-step1.scss';
 @import './scss/color-bar-step.scss';
+@import './scss/backing-step3.scss';
+
+$break-max-height: 810px;
+$break-super-max-height: 1010px;
+$break-min-height: 568px;
+
 
 .App {
   text-align: center;
@@ -37,9 +43,45 @@
   flex-direction: row;
   justify-content: space-between;
   width: 96vw;
-  top: -2vh;
+  top: 1px;
   left: 2%;
   position: absolute;
+}
+
+@media screen and (min-height: $break-max-height) and (max-height: $break-super-max-height) {
+  .arrowBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95vw;
+    top: -5vh;
+    left: 3%;
+    position: absolute;
+  }
+}
+
+@media screen and (min-height: $break-super-max-height) {
+  .arrowBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95vw;
+    top: -8vh;
+    left: 3%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-height: $break-min-height) {
+  .arrowBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95vw;
+    top: 1vh;
+    left: 3%;
+    position: absolute;
+  }
 }
 
 svg#bolt {
@@ -76,13 +118,16 @@ svg#bolt {
     border: 0;
     outline: none;
     background-color: #333;
+    font-family: BaysoirSans-Bold;
+    color: #FFFFFF;
+    letter-spacing: 3.43px;
     border-radius: 0;
     display: block;
-    height: 50px;
+    height: 55px;
     color: #fff;
     cursor: pointer;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 2vh;
     line-height: 1em;
     letter-spacing: 0.125em;
     transition: color 0.2s ease-in-out, background 0.2s ease-in-out, transform 0.35s ease-in-out;
@@ -93,4 +138,5 @@ svg#bolt {
     text-align: center;
     width: 99%;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.35), 0 0 0px #fff, 0 0 5px #fff, 0 0 1px #fff, 0 0 0px #fff;
 }

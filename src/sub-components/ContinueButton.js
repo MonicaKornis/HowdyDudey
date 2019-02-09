@@ -5,7 +5,7 @@ const ContinueButton = ({ goForwardStep, selection}) => {
   return (
     <div id='continueButton-container'>
       <div id='continueButton' onClick={(e) => goForwardStep(e)}>
-        CONTINUE
+        NEXT
       </div>
     </div>
   )

@@ -1,6 +1,4 @@
-$break-small-width-colorBox: 520px;
-$break-medium-width-colorBox: 660px;
-$break-large-width-colorBox: 1150px;
+
 
 .fontBar {
   overflow-y: scroll;
@@ -240,15 +238,6 @@ $break-large-width-colorBox: 1150px;
 }
 
 .selected {
-    height: 22%;
-    max-height: 50px;
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    align-items: center;
-    color: black;
-    transition: background 0.2s ease-in-out;
-
     &--Miami {
       font-family: 'Miami';
       height: 22%;

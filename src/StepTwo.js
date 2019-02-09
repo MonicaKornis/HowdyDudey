@@ -16,10 +16,10 @@ class StepTwo extends React.Component {
 
   selectColor(event,price) {
     //find DOM node of previously selected element and set it equal to default
-    document.getElementById(this.state.color).className = '';
+    document.getElementById(this.state.color).className = 'colorCircle';
     let cost = price === undefined ? 0 : price;
     this.setState({color: event.target.id, price: cost});
-    event.target.className = `selected`;
+    event.target.className = `colorCircle--selected`;
   }
 
   render() {

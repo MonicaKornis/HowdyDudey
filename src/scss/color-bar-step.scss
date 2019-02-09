@@ -1,3 +1,9 @@
+$break-small-width-colorBox: 596px;
+$break-medium-width-colorBox: 723px;
+$break-large-width-colorBox: 1150px;
+$break-super-small-width-colorBox: 479px;
+$break-super-duper-small-width-colorBox: 400px;
+
 .colorBar {
   overflow-y: scroll;
   color: black;
@@ -36,8 +42,8 @@
   width: 30%;
 }
 
-#Cool-White.colorCircle {
-  background-color: #fff;
+#Cool-White.colorCircle, #Cool-White.colorCircle--selected {
+  background-color: #d4d0d0;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -50,111 +56,128 @@ div.colorCircle::before {
   height: 45px;
   content: '';
   border: 3px solid rgba(151,151,151,.5);
-  position: absolute;
+  position: relative;
+  left: -3px;
+  top: -3px;
   display: block;
   transition: border 0.35s ease-in-out, transform 0.35s ease-in-out;
   transform: scale(0.9);
 }
 
-#Peach.colorCircle {
+div.colorCircle--selected::after {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  content: '';
+  border: 3px solid #f7f7f7;;
+  position: relative;
+  left: -3px;
+  top: -3px;
+  display: block;
+  transition: border 0.35s ease-in-out, transform 0.35s ease-in-out;
+  transform: scale(0.9);
+}
+
+#Peach.colorCircle, #Peach.colorCircle--selected {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: #ffb0b3;
 }
 
-#Baby-Blue.colorCircle {
+
+#Baby-Blue.colorCircle, #Baby-Blue.colorCircle--selected {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: #a3dbff;
 }
 
-#Mint-Green.colorCircle {
+#Mint-Green.colorCircle, #Mint-Green.colorCircle--selected {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: #99ffcc;
 }
 
-#Warm-White.colorCircle {
+#Warm-White.colorCircle, #Warm-White.colorCircle--selected {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: #fffff5;
+  background-color: #eaeacd;
 }
 
-#Pink.colorCircle {
+#Pink.colorCircle,  #Pink.colorCircle--selected {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: #ff8fff;
 }
 
-#Sky-Blue.colorCircle {
+#Sky-Blue.colorCircle, #Sky-Blue.colorCircle--selected {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: #00ffff;
 }
 
-#Yellow.colorCircle {
+#Yellow.colorCircle, #Yellow.colorCircle--selected {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: #ffff00;
 }
 
-#Hot-Pink.colorCircle {
+#Hot-Pink.colorCircle, #Hot-Pink.colorCircle--selected {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: #ff00ff;
 }
 
-#Electric-Blue.colorCircle {
+#Electric-Blue.colorCircle, #Electric-Blue.colorCircle--selected {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: #0080ff;
 }
 
-#Forest-Green.colorCircle{
-
+#Forest-Green.colorCircle, #Forest-Green.colorCircle--selected{
   width: 45px;
   height: 45px;
-  border-radius: 50%;  background-color: #007500;
+  border-radius: 50%;
+  background-color: #007500;
 }
 
-#Orange.colorCircle {
+#Orange.colorCircle, #Orange.colorCircle--selected {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: #ffb300;
 }
 
-#Red.colorCircle {
+#Red.colorCircle, #Red.colorCircle--selected {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: #ff0000;
 }
 
-#Lilac.colorCircle {
+#Lilac.colorCircle, #Lilac.colorCircle--selected {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: #b3b3ff;
 }
 
-#Purple.colorCircle {
+#Purple.colorCircle, #Purple.colorCircle--selected {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   background-color: #7a2aa9;
 }
 
-#Custom.colorCircle {
+#Custom.colorCircle, #Custom.colorCircle--selected {
    width: 45px;
    height: 45px;
    border-radius: 50%;
@@ -163,4 +186,625 @@ div.colorCircle::before {
    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+}
+
+@media screen and (max-width: $break-medium-width-colorBox) and (min-width: $break-small-width-colorBox) {
+
+  .colorBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 33%;
+  }
+
+  #Cool-White.colorCircle, #Cool-White.colorCircle--selected {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  div.colorCircle::before {
+    color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    content: '';
+    border: 3px solid rgba(151,151,151,.5);
+    position: relative;
+    left: -3px;
+    top: -3px;
+    display: block;
+    transition: border 0.35s ease-in-out, transform 0.35s ease-in-out;
+    transform: scale(0.9);
+  }
+
+  div.colorCircle--selected::after {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    content: '';
+    border: 3px solid #FF6692;;
+    position: relative;
+    left: -3px;
+    top: -3px;
+    display: block;
+    transition: border 0.35s ease-in-out, transform 0.35s ease-in-out;
+    transform: scale(0.9);
+  }
+
+  #Peach.colorCircle, #Peach.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffb0b3;
+  }
+
+
+  #Baby-Blue.colorCircle, #Baby-Blue.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #a3dbff;
+  }
+
+  #Mint-Green.colorCircle, #Mint-Green.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #99ffcc;
+  }
+
+  #Warm-White.colorCircle, #Warm-White.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fffff5;
+  }
+
+  #Pink.colorCircle,  #Pink.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff8fff;
+  }
+
+  #Sky-Blue.colorCircle, #Sky-Blue.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #00ffff;
+  }
+
+  #Yellow.colorCircle, #Yellow.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffff00;
+  }
+
+  #Hot-Pink.colorCircle, #Hot-Pink.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff00ff;
+  }
+
+  #Electric-Blue.colorCircle, #Electric-Blue.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #0080ff;
+  }
+
+  #Forest-Green.colorCircle, #Forest-Green.colorCircle--selected{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #007500;
+  }
+
+  #Orange.colorCircle, #Orange.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffb300;
+  }
+
+  #Red.colorCircle, #Red.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff0000;
+  }
+
+  #Lilac.colorCircle, #Lilac.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #b3b3ff;
+  }
+
+  #Purple.colorCircle, #Purple.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #7a2aa9;
+  }
+
+  #Custom.colorCircle, #Custom.colorCircle--selected {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     background: pink; /* For browsers that do not support gradients */
+     background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+     background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+     background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+     background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+  }
+}
+
+@media screen and (max-width: $break-small-width-colorBox) and (min-width: $break-super-small-width-colorBox) {
+  .colorBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 40%;
+  }
+
+  #Cool-White.colorCircle, #Cool-White.colorCircle--selected {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  div.colorCircle::before {
+    color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    content: '';
+    border: 3px solid rgba(151,151,151,.5);
+    position: relative;
+    left: -3px;
+    top: -3px;
+    display: block;
+    transition: border 0.35s ease-in-out, transform 0.35s ease-in-out;
+    transform: scale(0.9);
+  }
+
+  div.colorCircle--selected::after {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    content: '';
+    border: 3px solid #FF6692;;
+    position: relative;
+    left: -3px;
+    top: -3px;
+    display: block;
+    transition: border 0.35s ease-in-out, transform 0.35s ease-in-out;
+    transform: scale(0.9);
+  }
+
+  #Peach.colorCircle, #Peach.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffb0b3;
+  }
+
+
+  #Baby-Blue.colorCircle, #Baby-Blue.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #a3dbff;
+  }
+
+  #Mint-Green.colorCircle, #Mint-Green.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #99ffcc;
+  }
+
+  #Warm-White.colorCircle, #Warm-White.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fffff5;
+  }
+
+  #Pink.colorCircle,  #Pink.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff8fff;
+  }
+
+  #Sky-Blue.colorCircle, #Sky-Blue.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #00ffff;
+  }
+
+  #Yellow.colorCircle, #Yellow.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffff00;
+  }
+
+  #Hot-Pink.colorCircle, #Hot-Pink.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff00ff;
+  }
+
+  #Electric-Blue.colorCircle, #Electric-Blue.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #0080ff;
+  }
+
+  #Forest-Green.colorCircle, #Forest-Green.colorCircle--selected{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #007500;
+  }
+
+  #Orange.colorCircle, #Orange.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffb300;
+  }
+
+  #Red.colorCircle, #Red.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff0000;
+  }
+
+  #Lilac.colorCircle, #Lilac.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #b3b3ff;
+  }
+
+  #Purple.colorCircle, #Purple.colorCircle--selected {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #7a2aa9;
+  }
+
+  #Custom.colorCircle, #Custom.colorCircle--selected {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     background: pink; /* For browsers that do not support gradients */
+     background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+     background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+     background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+     background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+  }
+}
+
+@media screen and (max-width: $break-super-small-width-colorBox) and (min-width: $break-super-duper-small-width-colorBox) {
+  .colorBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 45%;
+  }
+
+  #Cool-White.colorCircle, #Cool-White.colorCircle--selected {
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+  div.colorCircle::before {
+    color: black;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    content: '';
+    border: 3px solid rgba(151,151,151,.5);
+    position: relative;
+    left: -3px;
+    top: -3px;
+    display: block;
+    transition: border 0.35s ease-in-out, transform 0.35s ease-in-out;
+    transform: scale(0.9);
+  }
+
+  div.colorCircle--selected::after {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    content: '';
+    border: 3px solid #FF6692;;
+    position: relative;
+    left: -3px;
+    top: -3px;
+    display: block;
+    transition: border 0.35s ease-in-out, transform 0.35s ease-in-out;
+    transform: scale(0.9);
+  }
+
+  #Peach.colorCircle, #Peach.colorCircle--selected {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ffb0b3;
+  }
+
+
+  #Baby-Blue.colorCircle, #Baby-Blue.colorCircle--selected {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #a3dbff;
+  }
+
+  #Mint-Green.colorCircle, #Mint-Green.colorCircle--selected {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #99ffcc;
+  }
+
+  #Warm-White.colorCircle, #Warm-White.colorCircle--selected {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fffff5;
+  }
+
+  #Pink.colorCircle,  #Pink.colorCircle--selected {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ff8fff;
+  }
+
+  #Sky-Blue.colorCircle, #Sky-Blue.colorCircle--selected {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #00ffff;
+  }
+
+  #Yellow.colorCircle, #Yellow.colorCircle--selected {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ffff00;
+  }
+
+  #Hot-Pink.colorCircle, #Hot-Pink.colorCircle--selected {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ff00ff;
+  }
+
+  #Electric-Blue.colorCircle, #Electric-Blue.colorCircle--selected {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #0080ff;
+  }
+
+  #Forest-Green.colorCircle, #Forest-Green.colorCircle--selected{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #007500;
+  }
+
+  #Orange.colorCircle, #Orange.colorCircle--selected {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ffb300;
+  }
+
+  #Red.colorCircle, #Red.colorCircle--selected {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ff0000;
+  }
+
+  #Lilac.colorCircle, #Lilac.colorCircle--selected {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #b3b3ff;
+  }
+
+  #Purple.colorCircle, #Purple.colorCircle--selected {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #7a2aa9;
+  }
+
+  #Custom.colorCircle, #Custom.colorCircle--selected {
+     width: 35px;
+     height: 35px;
+     border-radius: 50%;
+     background: pink; /* For browsers that do not support gradients */
+     background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+     background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+     background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+     background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+  }
+}
+
+@media screen and (max-width: $break-super-duper-small-width-colorBox) {
+  .colorBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  #Cool-White.colorCircle, #Cool-White.colorCircle--selected {
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  div.colorCircle::before {
+    color: black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    content: '';
+    border: 3px solid rgba(151,151,151,.5);
+    position: relative;
+    left: -3px;
+    top: -3px;
+    display: block;
+    transition: border 0.35s ease-in-out, transform 0.35s ease-in-out;
+    transform: scale(0.9);
+  }
+
+  div.colorCircle--selected::after {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    content: '';
+    border: 3px solid #FF6692;;
+    position: relative;
+    left: -3px;
+    top: -3px;
+    display: block;
+    transition: border 0.35s ease-in-out, transform 0.35s ease-in-out;
+    transform: scale(0.9);
+  }
+
+  #Peach.colorCircle, #Peach.colorCircle--selected {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffb0b3;
+  }
+
+
+  #Baby-Blue.colorCircle, #Baby-Blue.colorCircle--selected {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #a3dbff;
+  }
+
+  #Mint-Green.colorCircle, #Mint-Green.colorCircle--selected {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #99ffcc;
+  }
+
+  #Warm-White.colorCircle, #Warm-White.colorCircle--selected {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fffff5;
+  }
+
+  #Pink.colorCircle,  #Pink.colorCircle--selected {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff8fff;
+  }
+
+  #Sky-Blue.colorCircle, #Sky-Blue.colorCircle--selected {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #00ffff;
+  }
+
+  #Yellow.colorCircle, #Yellow.colorCircle--selected {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffff00;
+  }
+
+  #Hot-Pink.colorCircle, #Hot-Pink.colorCircle--selected {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff00ff;
+  }
+
+  #Electric-Blue.colorCircle, #Electric-Blue.colorCircle--selected {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #0080ff;
+  }
+
+  #Forest-Green.colorCircle, #Forest-Green.colorCircle--selected{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #007500;
+  }
+
+  #Orange.colorCircle, #Orange.colorCircle--selected {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffb300;
+  }
+
+  #Red.colorCircle, #Red.colorCircle--selected {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff0000;
+  }
+
+  #Lilac.colorCircle, #Lilac.colorCircle--selected {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #b3b3ff;
+  }
+
+  #Purple.colorCircle, #Purple.colorCircle--selected {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #7a2aa9;
+  }
+
+  #Custom.colorCircle, #Custom.colorCircle--selected {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     background: pink; /* For browsers that do not support gradients */
+     background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+     background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+     background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+     background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+  }
 }
