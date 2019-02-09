@@ -12,13 +12,13 @@ const Sign = ({signText, changeText, font, color, backing}) => {
   if(color !== undefined) {
     baseCls += ` neon ${color}`
   }
-  
+  // 
   if(backing !== undefined) {
-    baseCls += ` ${backing}`
+    backingStyle += `${baseCls} ${backing}`
   }
    debugger
   return (
-  <div className={backingStyle}>
+  <div className=''>
     <div className='display-wrap display-color-mirrored neon white'>
       <div className='editor-text'>
         <div className='signBox'>
@@ -30,6 +30,7 @@ const Sign = ({signText, changeText, font, color, backing}) => {
                         onChange={changeText} // handle innerHTML change
                         tagName='article' // Use a custom HTML tag (uses a div by default)
                       />
+            <div className={backingStyle} html={signText}>{signText}</div>
           </div>
         </div>
       </div>
