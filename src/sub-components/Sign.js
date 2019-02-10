@@ -14,7 +14,6 @@ const Sign = ({signText, changeText, font, color, backing}) => {
   }
   // 
   
-  
   if(backing == 'Outlined' || backing == 'Square') {
     backingStyle = `${baseCls} ${backing}`
   }
