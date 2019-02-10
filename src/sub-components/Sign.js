@@ -3,7 +3,7 @@ import ContentEditable from 'react-contenteditable'
 
 const Sign = ({signText, changeText, font, color, backing}) => {
   let baseCls = 'sign'
-  let backingStyle = ''; 
+  let backingStyle = 'NoDisplay'; 
   
   if(font !== undefined) {
     baseCls += `--${font}`
@@ -13,10 +13,12 @@ const Sign = ({signText, changeText, font, color, backing}) => {
     baseCls += ` neon ${color}`
   }
   // 
-  if(backing !== undefined) {
-    backingStyle += `${baseCls} ${backing}`
+  
+  
+  if(backing == 'Outlined' || backing == 'Square') {
+    backingStyle = `${baseCls} ${backing}`
   }
-   debugger
+
   return (
   <div className=''>
     <div className='display-wrap display-color-mirrored neon white'>
