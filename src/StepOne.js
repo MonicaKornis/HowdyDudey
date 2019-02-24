@@ -33,6 +33,7 @@ import LighteningBolt from './svgs/lightening-bolt';
         <Sign font={this.state.font} color={this.props.color} changeText={this.props.changeText} signText={this.props.signText}/>
 
         <LighteningBolt className='selector-caption'/>
+        
         <div className='selector-caption'> Pick A Font </div>
         <section className='fontBar'>
           <div id='Miami' className='option--Miami' onClick={this.selectFont}>Miami</div>

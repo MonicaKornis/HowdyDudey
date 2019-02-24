@@ -29,14 +29,14 @@ class StepThree extends React.Component {
         <Arrow goForwardStep={() => {}} goBackStep={(e) => this.props.goBackStep(e,this.state.price)} type='back'/>
         <Arrow goForwardStep={(e) => this.props.goForwardStep(e,this.state.color,this.state.price)} goBackStep={() => {}} type='forward'/>
       </div>
-    
+
         <Sign backing={this.state.backing} font={this.props.font} color={this.props.color} changeText={this.props.changeText} signText={this.props.signText}/>
-        
+
         <LighteningBolt className='selector-caption'/>
-        <div className='selector-caption'> Pick A Font </div>
-        
+        <div className='selector-caption'> Pick A Display Backing </div>
+
         <section className='colorBar'>
-        
+
           <div id='NoDisplay' className='backingStyle' onClick={this.selectBacking}>No Display</div>
           <div id='Outlined' className='backingStyle' onClick={this.selectBacking}>Outlined</div>
           <div id='Square' className='backingStyle' onClick={this.selectBacking}>Square</div>

@@ -1,0 +1,24 @@
+.sizeButton {
+  margin: 10px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  border: 1px solid white;
+}
+
+.sizeButton.selected {
+  margin: 10px;
+  border-radius: 50%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  background-color: white;
+  border: 1px solid white;
+}

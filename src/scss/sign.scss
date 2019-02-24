@@ -12,7 +12,7 @@ $break-large-width: 1150px;
   display: none;
 }
 
-.sign--Miami.Square::before {
+.sign--Miami.Square::after {
   content: '';
   width: 65%;
   height: 20%;
@@ -29,12 +29,6 @@ $break-large-width: 1150px;
   display: flex;
   justify-self: center;
 }
-
-
-
-
-
-
 
 
 .neon.Cool-White.Outlined {
@@ -184,81 +178,97 @@ $break-large-width: 1150px;
 .neon.Cool-White {
     color: #fff;
     text-shadow: 1px 2px 10px rgba(3, 57, 102, 0.3), 0 0 45px #ced0ce, 0 0 45px #ced0ce, 0 0 45px #ced0ce, 0 0 45px #ced0ce, 0 0 45px #ced0ce, 0 0 45px #ced0ce;
+    z-index: 2;
   }
 
 .neon.Peach {
   color: #ffb0b3;
   text-shadow: 1px 2px 10px rgba(3, 57, 102, 0.3), 0 0 45px #2f2828, 0 0 45px #ffb0b3, 0 0 45px #ffb0b3, 0 0 45px #a58788, 0 0 45px #6b5b5c, 0 0 45px #884f51;
+  z-index: 2;
 }
 
 .neon.Baby-Blue {
   color: #a3dbff;
   text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.35), 0 0 45px #a3dbff, 0 0 45px #3f4144a8, 0 0 45px #a3dbff, 0 0 45px #a3dbff;
+  z-index: 2;
 }
 
 .neon.Mint-Green {
   color: #99ffcc;
   text-shadow: 1px 2px 10px rgba(3, 57, 102, 0.3), 0 0 45px #4CAF50, 0 0 45px #4CAF50, 0 0 45px #4CAF50, 0 0 45px #4CAF50, 0 0 45px #4CAF50, 0 0 45px #4CAF50;
+  z-index: 2;
 }
 
 .neon.Warm-White {
   color: #fffff5;
   text-shadow:  1px 2px 10px rgba(3, 57, 102, 0.3), 0 0 45px #aba88f, 0 0 45px #ced0ce, 0 0 45px #ced0ce, 0 0 45px #ced0ce, 0 0 45px #ced0ce, 0 0 45px #ced0ce;
+  z-index: 2;
 }
 
 .neon.Pink {
   color: #ff8fff;
   text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.35), 0 0 45px #ff8fff, 0 0 45px #3f4144a8, 0 0 45px #ff8fff, 0 0 10px #ff8fff;
+  z-index: 2;
 }
 
 .neon.Sky-Blue {
   color: #00ffff;
   text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.35), 0 0 45px #00ffff, 0 0 45px #3f4144a8, 0 0 45px #00ffff, 0 0 45px #00ffff;
+  z-index: 2;
 }
 
 .neon.Green {
   color: #00c700;
   text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.35), 0 0 45px #00c700, 0 0 45px #3f4144a8, 0 0 45px #00c700, 0 0 45px #00c700;
+  z-index: 2;
 }
 
 .neon.Yellow {
   color: #ffff00;
   text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.35), 0 0 45px #ffff00, 0 0 45px #3f4144a8, 0 0 45px #ffff00, 0 0 45px #ffff00;
+  z-index: 2;
 }
 
 .neon.Hot-Pink {
   color: #ff00ff;
   text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.35), 0 0 45px #ff00ff, 0 0 45px #3f4144a8, 0 0 45px #ff00ff, 0 0 45px #4a024a;
+  z-index: 2;
 }
 
 .neon.Electric-Blue {
   color: #0080ff;
   text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.35), 0 0 45px #0080ff, 0 0 45px #3f4144a8, 0 0 45px #0080ff, 0 0 45px #0080ff;
+  z-index: 2;
 }
 
 .neon.Forest-Green {
   color: #0b940b;
   text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.35), 0 0 45px #007500, 0 0 45px #3f4144a8, 0 0 45px #007500, 0 0 45px #0b940b;
+  z-index: 2;
 }
 
 .neon.Orange {
   color: #ffb300;
   text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.35), 0 0 45px #ffb300, 0 0 45px #3f4144a8, 0 0 45px #ffb300, 0 0 45px #ffb300;
+  z-index: 2;
 }
 
 .neon.Red {
   color: #ff0000;
   text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.35), 0 0 45px #a50a0a, 0 0 45px #3f4144a8, 0 0 45px #a50a0a, 0 0 45px #ff0000;
+  z-index: 2;
 }
 
 .neon.Lilac {
   color: #b3b3ff;
   text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.35), 0 0 45px #b3b3ff, 0 0 45px #3f4144a8, 0 0 45px #b3b3ff, 0 0 45px #b3b3ff;
+  z-index: 2;
 }
 
 .neon.Purple {
   color: #b976e0;
   text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.35), 0 0 45px #7a2aa9, 0 0 45px #3f4144a8, 0 0 45px #7a2aa9, 0 0 45px #7a2aa9;
+  z-index: 2;
 }
 
 
@@ -336,7 +346,6 @@ $break-large-width: 1150px;
   position: relative;
 }
 
-
 .sign {
   text-shadow: 1px 2px 10px rgba(1, 72, 4, 0.3), 0 0 45px #76f199, 0 0 45px #76f199, 0 0 45px #76f199, 0 0 45px #76f199;
   font-size: 50px;
@@ -348,84 +357,102 @@ $break-large-width: 1150px;
 
   &--Miami {
     font-family: 'Miami';
-    font-size: 14vw;
+    font-size: 10vw;
     padding-top: 9vh;
   }
   &--Dolly {
     font-family: 'Dolly';
-    font-size: 14vw;
+    font-size: 10vw;
     padding-top: 9vh;
   }
 
   &--Presley {
     font-family: 'Presley';
-    font-size: 16vw;
+    font-size: 10vw;
     padding-top: 9vh;
   }
 
   &--Jane {
     font-family: 'Jane';
-    font-size: 14vw;
+    font-size: 10vw;
     padding-top: 9vh;
   }
 
   &--Stevie {
     font-family: 'Stevie';
-    font-size: 14vw;
+    font-size: 10vw;
     padding-top: 9vh;
   }
 
   &--Willie {
     font-family: 'Willie';
-    font-size: 14vw;
+    font-size: 10vw;
     padding-top: 9vh;
   }
 
   &--Jackson {
     font-family: 'Jackson';
-    font-size: 14vw;
+    font-size: 10vw;
     padding-top: 9vh;
   }
 
   &--Palm-Springs {
     font-family: 'Palm Springs';
-    font-size: 14vw;
+    font-size: 10vw;
     padding-top: 9vh;
   }
 
   &--Beverly-Hills{
     font-family: 'Beverly Hills';
-    font-size: 14vw;
+    font-size: 9vw;
     padding-top: 9vh;
   }
 
   &--San-Francisco {
     font-family: 'San Francisco';
-    font-size: 14vw;
-    padding-top: 9vh;
+    font-size: 9vw;
+    padding-top: 8vh;
   }
 
   &--Long-Beach{
     font-family: 'Long Beach';
-    font-size: 14vw;
-    padding-top: 9vh;
+    font-size: 9vw;
+    padding-top: 8vh;
   }
 
   &--Hank {
     font-family: 'Hank';
-    font-size: 14vw;
-    padding-top: 9vh;
+    font-size: 7vw;
+    padding-top: 8vh;
   }
 
   &--Bowie {
     font-family: 'Bowie';
-    font-size: 12vw;
+    font-size: 6vw;
     padding-top: 9vh;
   }
 
 
 
   @media screen and (min-width: $break-small-width) and (max-width: $break-medium-width) {
+
+    .sign--Miami.Square::after {
+      content: '';
+      width: 65%;
+      height: 20%;
+      padding-top: 7vh;
+      opacity: .1;
+      top: 10%;
+      left: 16%;
+      padding: 11px;
+      background-color: white;
+      white-space: normal;
+      position: absolute;
+      z-index: -2;
+      color: #fff;
+      display: flex;
+      justify-self: center;
+    }
 
     &--Miami {
       font-family: 'Miami';
@@ -440,7 +467,7 @@ $break-large-width: 1150px;
 
     &--Presley {
       font-family: 'Presley';
-      font-size: 13vw;
+      font-size: 14vw;
       padding-top: 9vh;
     }
 
@@ -458,7 +485,7 @@ $break-large-width: 1150px;
 
     &--Willie {
       font-family: 'Willie';
-      font-size: 11vw;
+      font-size: 9vw;
       padding-top: 9vh;
     }
 
@@ -476,13 +503,13 @@ $break-large-width: 1150px;
 
     &--Beverly-Hills{
       font-family: 'Beverly Hills';
-      font-size: 11vw;
+      font-size: 10vw;
       padding-top: 9vh;
     }
 
     &--San-Francisco {
       font-family: 'San Francisco';
-      font-size: 11vw;
+      font-size: 9vw;
       padding-top: 9vh;
     }
 
@@ -494,18 +521,37 @@ $break-large-width: 1150px;
 
     &--Hank {
       font-family: 'Hank';
-      font-size: 11vw;
+      font-size: 9vw;
       padding-top: 9vh;
     }
 
     &--Bowie {
       font-family: 'Bowie';
-      font-size: 9vw;
+      font-size: 7vw;
       padding-top: 9vh;
     }
   }
 
   @media screen and (min-width: $break-medium-width) {
+
+    // .sign--Miami.Square::after {
+    //   content: '';
+    //   width: 45%;
+    //   height: 22%;
+    //   padding-top: 7vh;
+    //   opacity: .1;
+    //   top: 10%;
+    //   left: 27%;
+    //   padding: 11px;
+    //   background-color: white;
+    //   white-space: normal;
+    //   position: absolute;
+    //   z-index: -2;
+    //   color: #fff;
+    //   display: flex;
+    //   justify-self: center;
+    // }
+
     &--Miami {
       font-family: 'Miami';
       font-size: 8vw;
@@ -585,6 +631,26 @@ $break-large-width: 1150px;
   }
 
   @media screen and (min-width: $break-large-width) {
+
+    .sign--Miami.Square::after {
+      content: '';
+      width: 45%;
+      height: 22%;
+      padding-top: 7vh;
+      opacity: .1;
+      top: 10%;
+      left: 27%;
+      padding: 11px;
+      background-color: white;
+      white-space: normal;
+      position: absolute;
+      z-index: -2;
+      color: #fff;
+      display: flex;
+      justify-self: center;
+    }
+
+
     &--Miami {
       font-family: 'Miami';
       font-size: 7vw;
